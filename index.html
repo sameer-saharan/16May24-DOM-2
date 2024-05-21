@@ -8,6 +8,14 @@
 </head>
 <body>
     <div class="sort-and-filter">
+        <div class="filter">
+            <label for="">Filter by: </label>
+            <button onclick="filterByCategory(`men's clothing`)">Men's clothing</button>
+            <button onclick="filterByCategory(`women's clothing`)">Women's clothing</button>
+            <button onclick="filterByCategory(`jewelery`)">Jewellery</button>
+            <button onclick="filterByCategory(`electronics`)">Electronics</button>
+        </div>
+
         <div class="sort">
             <label for="">Sort by: </label>
             <select name="" id="select-bar">
@@ -17,14 +25,6 @@
                 <option value="Less">Popularity (Less to More)</option>
                 <option value="More">Popularity (More to Less)</option>
             </select>
-        </div>
-
-        <div class="filter">
-            <label for="">Filter by: </label>
-            <button onclick="filterByCategory(`men's clothing`)">Men's clothing</button>
-            <button onclick="filterByCategory(`women's clothing`)">Women's clothing</button>
-            <button onclick="filterByCategory(`jewelery`)">Jewellery</button>
-            <button onclick="filterByCategory(`electronics`)">Electronics</button>
         </div>
     </div>
     <div class="main">
